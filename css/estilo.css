@@ -1,0 +1,75 @@
+.contenedor
+{
+    background-color: brown;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-areas: "cabecera cabecera cabecera"
+                         "menu menu menu"
+                         "contenido contenido publicidad"
+                         "pie pie pie";
+}
+.contenedor>div
+{
+    background-color: cornflowerblue;
+}
+.contenedor .cabecera
+{
+    background-color: yellow;
+    grid-column: cabecera;
+}
+.contenedor .menu
+{
+    background-color: aqua;
+    grid-column: menu;
+}
+.contenedor .contenido
+{
+    background-color: green;
+    grid-column: contenido;
+   
+}
+.caja1
+{
+    background-color: blue;
+} 
+.caja2
+{
+    background-color: orange;
+}
+.cont
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contenedor .publicidad
+{
+    background-color: red;
+    grid-column: publicidad;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+.publicidad1
+{
+    background-color: greenyellow;
+}
+.publicidad2
+{
+    background-color: pink;
+}
+.contenedor .pie
+{
+    background-color: purple;
+    grid-column: pie;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
